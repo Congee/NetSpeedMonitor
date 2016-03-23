@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42A5BF141CA27204003FF0E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5BF131CA27204003FF0E1 /* AppDelegate.m */; };
+		42A5BF171CA27204003FF0E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5BF161CA27204003FF0E1 /* main.m */; };
+		42A5BF1A1CA27204003FF0E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5BF191CA27204003FF0E1 /* ViewController.m */; };
+		42A5BF1C1CA27204003FF0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BF1B1CA27204003FF0E1 /* Assets.xcassets */; };
+		42A5BF1F1CA27204003FF0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BF1D1CA27204003FF0E1 /* Main.storyboard */; };
+		42A5BF2A1CA27204003FF0E1 /* SpeedMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5BF291CA27204003FF0E1 /* SpeedMonitorTests.m */; };
+		42A5BF351CA27204003FF0E1 /* SpeedMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5BF341CA27204003FF0E1 /* SpeedMonitorUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42A5BF261CA27204003FF0E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42A5BF071CA27204003FF0E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42A5BF0E1CA27204003FF0E1;
+			remoteInfo = SpeedMonitor;
+		};
+		42A5BF311CA27204003FF0E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42A5BF071CA27204003FF0E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42A5BF0E1CA27204003FF0E1;
+			remoteInfo = SpeedMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42A5BF0F1CA27204003FF0E1 /* SpeedMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A5BF121CA27204003FF0E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42A5BF131CA27204003FF0E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42A5BF161CA27204003FF0E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42A5BF181CA27204003FF0E1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		42A5BF191CA27204003FF0E1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		42A5BF1B1CA27204003FF0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42A5BF1E1CA27204003FF0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42A5BF201CA27204003FF0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A5BF251CA27204003FF0E1 /* SpeedMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A5BF291CA27204003FF0E1 /* SpeedMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedMonitorTests.m; sourceTree = "<group>"; };
+		42A5BF2B1CA27204003FF0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A5BF301CA27204003FF0E1 /* SpeedMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A5BF341CA27204003FF0E1 /* SpeedMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedMonitorUITests.m; sourceTree = "<group>"; };
+		42A5BF361CA27204003FF0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42A5BF0C1CA27204003FF0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A5BF221CA27204003FF0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A5BF2D1CA27204003FF0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42A5BF061CA27204003FF0E1 = {
+			isa = PBXGroup;
+			children = (
+				42A5BF111CA27204003FF0E1 /* SpeedMonitor */,
+				42A5BF281CA27204003FF0E1 /* SpeedMonitorTests */,
+				42A5BF331CA27204003FF0E1 /* SpeedMonitorUITests */,
+				42A5BF101CA27204003FF0E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42A5BF101CA27204003FF0E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42A5BF0F1CA27204003FF0E1 /* SpeedMonitor.app */,
+				42A5BF251CA27204003FF0E1 /* SpeedMonitorTests.xctest */,
+				42A5BF301CA27204003FF0E1 /* SpeedMonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42A5BF111CA27204003FF0E1 /* SpeedMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				42A5BF121CA27204003FF0E1 /* AppDelegate.h */,
+				42A5BF131CA27204003FF0E1 /* AppDelegate.m */,
+				42A5BF181CA27204003FF0E1 /* ViewController.h */,
+				42A5BF191CA27204003FF0E1 /* ViewController.m */,
+				42A5BF1B1CA27204003FF0E1 /* Assets.xcassets */,
+				42A5BF1D1CA27204003FF0E1 /* Main.storyboard */,
+				42A5BF201CA27204003FF0E1 /* Info.plist */,
+				42A5BF151CA27204003FF0E1 /* Supporting Files */,
+			);
+			path = SpeedMonitor;
+			sourceTree = "<group>";
+		};
+		42A5BF151CA27204003FF0E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42A5BF161CA27204003FF0E1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42A5BF281CA27204003FF0E1 /* SpeedMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				42A5BF291CA27204003FF0E1 /* SpeedMonitorTests.m */,
+				42A5BF2B1CA27204003FF0E1 /* Info.plist */,
+			);
+			path = SpeedMonitorTests;
+			sourceTree = "<group>";
+		};
+		42A5BF331CA27204003FF0E1 /* SpeedMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				42A5BF341CA27204003FF0E1 /* SpeedMonitorUITests.m */,
+				42A5BF361CA27204003FF0E1 /* Info.plist */,
+			);
+			path = SpeedMonitorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42A5BF0E1CA27204003FF0E1 /* SpeedMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A5BF391CA27204003FF0E1 /* Build configuration list for PBXNativeTarget "SpeedMonitor" */;
+			buildPhases = (
+				42A5BF0B1CA27204003FF0E1 /* Sources */,
+				42A5BF0C1CA27204003FF0E1 /* Frameworks */,
+				42A5BF0D1CA27204003FF0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedMonitor;
+			productName = SpeedMonitor;
+			productReference = 42A5BF0F1CA27204003FF0E1 /* SpeedMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42A5BF241CA27204003FF0E1 /* SpeedMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A5BF3C1CA27204003FF0E1 /* Build configuration list for PBXNativeTarget "SpeedMonitorTests" */;
+			buildPhases = (
+				42A5BF211CA27204003FF0E1 /* Sources */,
+				42A5BF221CA27204003FF0E1 /* Frameworks */,
+				42A5BF231CA27204003FF0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42A5BF271CA27204003FF0E1 /* PBXTargetDependency */,
+			);
+			name = SpeedMonitorTests;
+			productName = SpeedMonitorTests;
+			productReference = 42A5BF251CA27204003FF0E1 /* SpeedMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		42A5BF2F1CA27204003FF0E1 /* SpeedMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A5BF3F1CA27204003FF0E1 /* Build configuration list for PBXNativeTarget "SpeedMonitorUITests" */;
+			buildPhases = (
+				42A5BF2C1CA27204003FF0E1 /* Sources */,
+				42A5BF2D1CA27204003FF0E1 /* Frameworks */,
+				42A5BF2E1CA27204003FF0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42A5BF321CA27204003FF0E1 /* PBXTargetDependency */,
+			);
+			name = SpeedMonitorUITests;
+			productName = SpeedMonitorUITests;
+			productReference = 42A5BF301CA27204003FF0E1 /* SpeedMonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42A5BF071CA27204003FF0E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Charles Wu";
+				TargetAttributes = {
+					42A5BF0E1CA27204003FF0E1 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					42A5BF241CA27204003FF0E1 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 42A5BF0E1CA27204003FF0E1;
+					};
+					42A5BF2F1CA27204003FF0E1 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 42A5BF0E1CA27204003FF0E1;
+					};
+				};
+			};
+			buildConfigurationList = 42A5BF0A1CA27204003FF0E1 /* Build configuration list for PBXProject "SpeedMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42A5BF061CA27204003FF0E1;
+			productRefGroup = 42A5BF101CA27204003FF0E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42A5BF0E1CA27204003FF0E1 /* SpeedMonitor */,
+				42A5BF241CA27204003FF0E1 /* SpeedMonitorTests */,
+				42A5BF2F1CA27204003FF0E1 /* SpeedMonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42A5BF0D1CA27204003FF0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A5BF1C1CA27204003FF0E1 /* Assets.xcassets in Resources */,
+				42A5BF1F1CA27204003FF0E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A5BF231CA27204003FF0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A5BF2E1CA27204003FF0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42A5BF0B1CA27204003FF0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A5BF1A1CA27204003FF0E1 /* ViewController.m in Sources */,
+				42A5BF171CA27204003FF0E1 /* main.m in Sources */,
+				42A5BF141CA27204003FF0E1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A5BF211CA27204003FF0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A5BF2A1CA27204003FF0E1 /* SpeedMonitorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A5BF2C1CA27204003FF0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A5BF351CA27204003FF0E1 /* SpeedMonitorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42A5BF271CA27204003FF0E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42A5BF0E1CA27204003FF0E1 /* SpeedMonitor */;
+			targetProxy = 42A5BF261CA27204003FF0E1 /* PBXContainerItemProxy */;
+		};
+		42A5BF321CA27204003FF0E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42A5BF0E1CA27204003FF0E1 /* SpeedMonitor */;
+			targetProxy = 42A5BF311CA27204003FF0E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42A5BF1D1CA27204003FF0E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42A5BF1E1CA27204003FF0E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42A5BF371CA27204003FF0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42A5BF381CA27204003FF0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42A5BF3A1CA27204003FF0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpeedMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.congee.SpeedMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42A5BF3B1CA27204003FF0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpeedMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.congee.SpeedMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42A5BF3D1CA27204003FF0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpeedMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.congee.SpeedMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedMonitor.app/Contents/MacOS/SpeedMonitor";
+			};
+			name = Debug;
+		};
+		42A5BF3E1CA27204003FF0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpeedMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.congee.SpeedMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedMonitor.app/Contents/MacOS/SpeedMonitor";
+			};
+			name = Release;
+		};
+		42A5BF401CA27204003FF0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpeedMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.congee.SpeedMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpeedMonitor;
+			};
+			name = Debug;
+		};
+		42A5BF411CA27204003FF0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpeedMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.congee.SpeedMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpeedMonitor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42A5BF0A1CA27204003FF0E1 /* Build configuration list for PBXProject "SpeedMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A5BF371CA27204003FF0E1 /* Debug */,
+				42A5BF381CA27204003FF0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42A5BF391CA27204003FF0E1 /* Build configuration list for PBXNativeTarget "SpeedMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A5BF3A1CA27204003FF0E1 /* Debug */,
+				42A5BF3B1CA27204003FF0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42A5BF3C1CA27204003FF0E1 /* Build configuration list for PBXNativeTarget "SpeedMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A5BF3D1CA27204003FF0E1 /* Debug */,
+				42A5BF3E1CA27204003FF0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42A5BF3F1CA27204003FF0E1 /* Build configuration list for PBXNativeTarget "SpeedMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A5BF401CA27204003FF0E1 /* Debug */,
+				42A5BF411CA27204003FF0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42A5BF071CA27204003FF0E1 /* Project object */;
+}
