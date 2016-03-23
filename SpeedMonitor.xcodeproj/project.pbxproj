@@ -14,6 +14,7 @@
 		42A5BF1F1CA27204003FF0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BF1D1CA27204003FF0E1 /* Main.storyboard */; };
 		42A5BF2A1CA27204003FF0E1 /* SpeedMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5BF291CA27204003FF0E1 /* SpeedMonitorTests.m */; };
 		42A5BF351CA27204003FF0E1 /* SpeedMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5BF341CA27204003FF0E1 /* SpeedMonitorUITests.m */; };
+		42B8661A1CA2A0EB003BA63A /* SpeedProvider.c in Sources */ = {isa = PBXBuildFile; fileRef = 42B866181CA2A0EB003BA63A /* SpeedProvider.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		42A5BF301CA27204003FF0E1 /* SpeedMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A5BF341CA27204003FF0E1 /* SpeedMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedMonitorUITests.m; sourceTree = "<group>"; };
 		42A5BF361CA27204003FF0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B866181CA2A0EB003BA63A /* SpeedProvider.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SpeedProvider.c; sourceTree = "<group>"; };
+		42B866191CA2A0EB003BA63A /* SpeedProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedProvider.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				42A5BF131CA27204003FF0E1 /* AppDelegate.m */,
 				42A5BF181CA27204003FF0E1 /* ViewController.h */,
 				42A5BF191CA27204003FF0E1 /* ViewController.m */,
+				42B866181CA2A0EB003BA63A /* SpeedProvider.c */,
+				42B866191CA2A0EB003BA63A /* SpeedProvider.h */,
 				42A5BF1B1CA27204003FF0E1 /* Assets.xcassets */,
 				42A5BF1D1CA27204003FF0E1 /* Main.storyboard */,
 				42A5BF201CA27204003FF0E1 /* Info.plist */,
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B8661A1CA2A0EB003BA63A /* SpeedProvider.c in Sources */,
 				42A5BF1A1CA27204003FF0E1 /* ViewController.m in Sources */,
 				42A5BF171CA27204003FF0E1 /* main.m in Sources */,
 				42A5BF141CA27204003FF0E1 /* AppDelegate.m in Sources */,
@@ -489,6 +495,7 @@
 				42A5BF3B1CA27204003FF0E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42A5BF3C1CA27204003FF0E1 /* Build configuration list for PBXNativeTarget "SpeedMonitorTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +504,7 @@
 				42A5BF3E1CA27204003FF0E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42A5BF3F1CA27204003FF0E1 /* Build configuration list for PBXNativeTarget "SpeedMonitorUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +513,7 @@
 				42A5BF411CA27204003FF0E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

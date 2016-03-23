@@ -7,9 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SpeedProvider.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject<NSApplicationDelegate> {
+  IBOutlet NSMenu *statusMenu;
+  IBOutlet NSMenuItem *quit;
+  NSMutableAttributedString *speedString;
+  struct if_data64 ifdata;
 
+  NSWindow *window;
+  NSStatusItem *statusItem;
+}
+
+@property IBOutlet NSWindow *window;
+- (void)createStatusItem;
 
 @end
-
