@@ -43,7 +43,7 @@
 - (void)createStatusItem {
   statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
   statusMenu = [[NSMenu alloc] init];
-  speedString = [[NSMutableAttributedString alloc] initWithString: @"debug"];
+  speedString = [[NSMutableAttributedString alloc] initWithString: @""];
   quit       = [[NSMenuItem alloc] initWithTitle:@"quit"
 										  action:@selector(terminate:)
 								   keyEquivalent:@"q"];
@@ -67,24 +67,25 @@
   size_t tx_bytes = ifmib.ifmd_data.ifi_obytes - ifdata.ifi_obytes;
 
   humanize_digit(rx_bytes, &string);
-  //NSLog(@"%@", [NSString stringWithFormat:@"⇡ %.3Lf%s\n", string.number, string.suffix]);
+  // NSLog(@"%@", [NSString stringWithFormat:@"⇡ %.3Lf%s\n", string.number,
+  // string.suffix]);
 
   NSFont *font             = [NSFont fontWithName:@"Lucida Grande" size:9];
   NSDictionary *attributes = [[NSDictionary alloc]
       initWithObjectsAndKeys:font, NSFontAttributeName, nil];
 
   [speedString setAttributedString: [[NSAttributedString alloc]
-              initWithString:[NSString stringWithFormat:@"⇡ %.1Lf%s\n",
+              initWithString:[NSString stringWithFormat:@"⇡%.1Lf%s\n",
                                                         string.number,
                                                         string.suffix]
                   attributes:attributes]];
 
   humanize_digit(tx_bytes, &string);
   [speedString appendAttributedString: [[NSAttributedString alloc]
-              initWithString:[NSString stringWithFormat:@"⇣ %.1Lf%s",
-                                                        string.number,
-                                                        string.suffix]
-                  attributes:attributes]];
+			   initWithString:[NSString stringWithFormat:@"⇣%.1Lf%s",
+														 string.number,
+														 string.suffix]
+                           attributes:attributes]];
 
   [statusItem setAttributedTitle:speedString];
 

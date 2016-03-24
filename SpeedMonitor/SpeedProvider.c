@@ -1,17 +1,11 @@
 #include <stdio.h>
-#include <sys/sockio.h>
+#include <stdlib.h>
 #include <unistd.h>
-#include <net/if.h>
-#include <net/if_media.h>
-#include <net/if_mib.h>
-#include <sys/ioctl.h>
-#include <sys/sysctl.h>
 #include <ifaddrs.h>
 #include <assert.h>
 #include <string.h>
 #include <stdbool.h>
-
-static unsigned int interval = 1;
+#include "SpeedProvider.h"
 
 static bool is_interface_active(int fd, char *ifname) {
 	struct ifmediareq media = {0};
@@ -23,13 +17,19 @@ static bool is_interface_active(int fd, char *ifname) {
 }
 
 static char *active_interface() {
-	struct ifaddrs *ifap;
-	
-	int fd; // finds the active interface by establishing a udp socket
-	if ((fd = socket(PF_INET, SOCK_DGRAM, 0)) == -1)
+	// finds the active interface by establishing a udp socket
+	int fd = socket(PF_INET, SOCK_DGRAM, 0);
+	if (fd == -1) {
 		perror("socket()");
+		return NULL;
+	}
 
-	getifaddrs(&ifap);
+	struct ifaddrs *ifap; // will be initilized by getifaddrs().
+    if (getifaddrs(&ifap)) {
+		perror("getifaddrs()");
+		exit(1);
+	}
+
 	struct ifaddrs *ifa = ifap;
 	for (; ifa; ifa = ifa->ifa_next)
 		if (ifa->ifa_data &&
@@ -39,9 +39,13 @@ static char *active_interface() {
 			break;
 		}
 
+	size_t len = strlen(ifa->ifa_name);
+	char *if_name = malloc(len);
+	memcpy(if_name, ifa->ifa_name, len);
+
 	close(fd);
 	freeifaddrs(ifap);
-	return ifa->ifa_name;
+	return if_name;
 }
 
 static int ifcount() {
@@ -54,9 +58,11 @@ static int ifcount() {
 
 /* [TODO]: rx rate, netstat/if.c +770 - 2016-01-22 04:33P */
 void fill_interface_data(struct ifmibdata *ifmib) {
-	int fd;
-	if ((fd = socket(PF_INET, SOCK_DGRAM, 0)) == -1)
+	int fd = socket(PF_INET, SOCK_DGRAM, 0);
+	if (fd == -1) {
 		perror("socket()");
+		exit(1);
+	}
 
 	int row = 1; // the index of interfaces returned by ifcount() starts with 1
 	int ifcounts = ifcount();
@@ -86,11 +92,6 @@ static const char *suffixes[] = {
 	"YiB"
 };
 
-struct human_readble_string {
-	long double number;
-	char *suffix;
-};
-
 void humanize_digit(long double number, struct human_readble_string *string) {
 	unsigned int base = 1024;
 	unsigned int max = 9999; // 4 digits at most
@@ -102,29 +103,3 @@ void humanize_digit(long double number, struct human_readble_string *string) {
 	string->number = number;
 	string->suffix = (char *)suffixes[count];
 }
-
-#if 0
-int main(void) {
-	struct ifmibdata ifmib;
-	struct if_data64 ifdata = {0};
-	struct human_readble_string string = {0, NULL};
-
-	while (true) {
-		//memset(&string, 0, sizeof(string));
-		fill_interface_data(&ifmib);
-		size_t rx_bytes = ifmib.ifmd_data.ifi_ibytes - ifdata.ifi_ibytes;
-		size_t tx_bytes = ifmib.ifmd_data.ifi_obytes - ifdata.ifi_obytes;
-
-		humanize_digit(rx_bytes, &string);
-		printf("%.1Lf %s", string.number, string.suffix);
-		putchar('\t');
-		humanize_digit(tx_bytes, &string);
-		printf("%.1Lf %s", string.number, string.suffix);
-		putchar('\n');
-
-		sleep(interval);
-		ifdata = ifmib.ifmd_data;
-	}
-	return 0;
-}
-#endif
