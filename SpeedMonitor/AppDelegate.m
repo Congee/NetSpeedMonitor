@@ -66,7 +66,7 @@
   size_t rx_bytes = ifmib.ifmd_data.ifi_ibytes - ifdata.ifi_ibytes;
   size_t tx_bytes = ifmib.ifmd_data.ifi_obytes - ifdata.ifi_obytes;
 
-  humanize_digit(rx_bytes, &string);
+  humanize_digit(tx_bytes, &string);
   // NSLog(@"%@", [NSString stringWithFormat:@"⇡ %.3Lf%s\n", string.number,
   // string.suffix]);
 
@@ -80,7 +80,7 @@
                                                         string.suffix]
                   attributes:attributes]];
 
-  humanize_digit(tx_bytes, &string);
+  humanize_digit(rx_bytes, &string);
   [speedString appendAttributedString: [[NSAttributedString alloc]
 			   initWithString:[NSString stringWithFormat:@"⇣%.1Lf%s",
 														 string.number,
