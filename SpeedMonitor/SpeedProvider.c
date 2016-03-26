@@ -16,6 +16,7 @@ static bool is_interface_active(int fd, char *ifname) {
 	return media.ifm_status & IFM_AVALID && media.ifm_status & IFM_ACTIVE;
 }
 
+__unused
 static char *active_interface() {
 	// finds the active interface by establishing a udp socket
 	int fd = socket(PF_INET, SOCK_DGRAM, 0);
@@ -58,12 +59,14 @@ static int ifcount() {
 
 /* [TODO]: rx rate, netstat/if.c +770 - 2016-01-22 04:33P */
 void fill_interface_data(struct ifmibdata *ifmib) {
+    // [FIX]: should establish socket connection only ONCE
 	int fd = socket(PF_INET, SOCK_DGRAM, 0);
 	if (fd == -1) {
 		perror("socket()");
 		exit(1);
 	}
-
+    
+    // man ifmib
 	int row = 1; // the index of interfaces returned by ifcount() starts with 1
 	int ifcounts = ifcount();
 	int name[6] = {CTL_NET, PF_LINK, NETLINK_GENERIC}; /* Common OID prefix */
@@ -78,6 +81,7 @@ void fill_interface_data(struct ifmibdata *ifmib) {
 		if (is_interface_active(fd, ifmib->ifmd_name))
 			break;
 	}
+	close(fd);
 }
 
 static const char *suffixes[] = {
